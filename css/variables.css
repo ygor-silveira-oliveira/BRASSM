@@ -1,0 +1,49 @@
+/* Design tokens — migrado de app/globals.css (:root) */
+:root {
+  /* Primary Colors */
+  --color-primary: #208f11;
+  --color-primary-dark: #0f172a;
+  --color-accent: #d4af37;
+
+  /* Backgrounds & Surfaces */
+  --color-background: #ffffff;
+  --color-surface: #f8f9fa;
+  --color-surface-secondary: #f0f1f3;
+
+  /* Text */
+  --color-text: #1a1a1a;
+  --color-text-muted: #666666;
+  --color-text-light: #999999;
+
+  /* Borders */
+  --color-border: #e0e0e0;
+
+  /* Typography */
+  --font-sans:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
+    "Cantarell", sans-serif;
+  --font-serif: "Georgia", "Times New Roman", serif;
+
+  /* Sizes */
+  --container-max-width: 1200px;
+  --container-padding: 24px;
+
+  /* Spacing Scale */
+  --space-xs: 8px;
+  --space-sm: 16px;
+  --space-md: 24px;
+  --space-lg: 32px;
+  --space-xl: 48px;
+  --space-2xl: 64px;
+  --space-3xl: 96px;
+
+  /* Border Radius */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+
+  /* Transitions */
+  --transition-fast: 150ms ease-in-out;
+  --transition-base: 300ms ease-in-out;
+  --transition-slow: 500ms ease-in-out;
+}

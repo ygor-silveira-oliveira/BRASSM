@@ -1,0 +1,21 @@
+/* Ajustes responsivos globais (tokens, tipografia, seções) — migrado de app/globals.css */
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  :root {
+    --container-padding: 16px;
+    --space-2xl: 48px;
+    --space-xl: 32px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  section {
+    padding: var(--space-xl) 0;
+  }
+}

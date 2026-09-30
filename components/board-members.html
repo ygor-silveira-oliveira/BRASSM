@@ -1,0 +1,20 @@
+<section class="board" aria-labelledby="board-title">
+  <div class="container">
+    <h2 id="board-title" class="sr-only">Board members</h2>
+    <ul class="board-grid" id="board-members-list" role="list"></ul>
+  </div>
+
+  <!-- Molde de um card. O JS clona este template para cada item de js/data/members.js -->
+  <template id="board-card-template">
+    <li class="board-card">
+      <figure class="board-card__figure">
+        <img class="board-card__image" alt="" loading="lazy" decoding="async">
+      </figure>
+      <div class="board-card__body">
+        <h3 class="board-card__name"></h3>
+        <p class="board-card__role"></p>
+        <p class="board-card__university"></p>
+      </div>
+    </li>
+  </template>
+</section>
