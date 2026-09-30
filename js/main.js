@@ -3,6 +3,7 @@ import { loadAnalytics } from './utils/analytics.js';
 import { initHeader } from './components/header.js';
 import { initFooter } from './components/footer.js';
 import { initBoardMembers } from './components/board-members.js';
+import { initHomeSections } from './components/home-sections.js';
 
 async function init() {
   // 1. Injeta header, footer e seções (todos os fetch rodam em paralelo)
@@ -12,6 +13,7 @@ async function init() {
   initHeader();
   initFooter();
   initBoardMembers();
+  initHomeSections();
 
   // 3. Métricas (somente em produção)
   loadAnalytics();

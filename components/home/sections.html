@@ -1,0 +1,37 @@
+<section class="home-hero" aria-labelledby="hero-title">
+  <img
+    src="/assets/images/hero/hero-main.png"
+    alt="Brazilian woman wrapped in the Brazil flag looking at the New York City skyline and the Statue of Liberty at sunset"
+    width="1254"
+    height="1254"
+    fetchpriority="high"
+    decoding="async"
+    class="home-hero-image"
+  />
+  <div class="home-hero-overlay" aria-hidden="true"></div>
+  <div class="container home-hero-content">
+    <h1 id="hero-title" class="home-hero-title">
+      <span class="home-hero-title-main">BRASSM</span>
+      <span class="home-hero-title-sub">Brazilian Scholars for Sport Management</span>
+    </h1>
+  </div>
+</section>
+
+<section class="home-sections" aria-label="Highlights">
+  <ul class="home-section-list" id="home-sections-list" role="list"></ul>
+
+  <!-- Molde de um bloco. O JS clona este template para cada item de js/data/home-sections.js -->
+  <template id="home-section-template">
+    <li class="home-section-item">
+      <div class="container home-section-grid">
+        <div class="home-section-media">
+          <img class="home-section-image" alt="" loading="lazy" decoding="async">
+        </div>
+        <div class="home-section-copy">
+          <h2 class="home-section-title"></h2>
+          <p class="home-section-text"></p>
+        </div>
+      </div>
+    </li>
+  </template>
+</section>
