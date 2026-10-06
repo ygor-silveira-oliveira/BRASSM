@@ -27,28 +27,31 @@
   <link rel="stylesheet" href="/css/responsive.css">
   <script type="module" src="/js/main.js"></script>
 </head>
-<body>
+<body class="history-page">
   <a class="skip-link" href="#main">Skip to main content</a>
   <div class="include-header" data-include="/components/header.html"></div>
 
   <main id="main">
-    <div class="page">
-      <section class="page__hero">
-        <div class="container">
-          <p class="page__kicker">Our history</p>
-          <h1>Built through connection.</h1>
-          <p class="page__intro">Every community begins with a question: what could we make possible together?</p>
-        </div>
-      </section>
-      <section class="page__content">
-        <div class="container">
-          <div class="page__column">
-            <p>BRASSM is a developing story shaped by Brazilian scholars and professionals in the United States. This page will hold the milestones, people, and turning points that make the association what it is.</p>
-            <p>Content placeholder — definitive historical content will be added here.</p>
+      <section class="history-hero" aria-labelledby="history-title">
+        <!-- Foto provisoria: substituir pela imagem enviada pelo cliente. -->
+        <img class="history-hero__image" src="/assets/images/hero/conference.jpeg" alt="" fetchpriority="high" decoding="async">
+        <div class="history-hero__overlay" aria-hidden="true"></div>
+        <div class="container history-hero__content">
+          <p class="history-hero__eyebrow">BRASSM</p>
+          <h1 id="history-title">Our History</h1>
+          <!-- Substituir os textos abaixo pela historia oficial da organizacao. -->
+          <div class="history-hero__story">
+            <h2>How it all began</h2>
+            <p>[The story of how BRASSM was created, from the first conversations to the formation of the organization.]</p>
+            <h2>When and why we started</h2>
+            <p>[The founding date and the purpose that brought the community together.]</p>
+          </div>
+          <div class="history-hero__founders">
+            <h2>Founding members</h2>
+            <p>[Names of the founding members to be provided.]</p>
           </div>
         </div>
       </section>
-    </div>
   </main>
 
   <div data-include="/components/footer.html"></div>

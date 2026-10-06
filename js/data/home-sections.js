@@ -1,32 +1,21 @@
-/**
- * Blocos de destaque da Home (abaixo do hero) — única fonte de dados da seção "home-sections".
- *
- * Para editar: troque `title` e `text` de cada bloco pelo conteúdo definitivo.
- * A imagem é temporária (mesma foto usada no hero) até o cliente definir as fotos
- * finais de cada bloco — quando estiverem prontas, basta trocar `image`/`alt`.
- * `reverse: true` inverte o bloco no desktop (texto à esquerda, imagem à direita);
- * no mobile a imagem sempre aparece primeiro, independente desse valor.
- */
+/** Três cópias do hero. Edite title, text, image e alt de cada bloco quando quiser. */
 export const homeSections = [
   {
-    title: 'Lorem ipsum dolor sit amet',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    image: '/assets/images/hero/hero-main.png',
-    alt: 'Brazilian woman wrapped in the Brazil flag looking at the New York City skyline and the Statue of Liberty at sunset',
-    reverse: true,
+    title: "BRASSM",
+    text: "Brazilian woman wrapped in the Brazil flag looking at the New York City skyline and the Statue of Liberty at sunset",
+    image: "/assets/images/hero/conference.jpeg",
+    alt: "Brazilian woman wrapped in the Brazil flag looking at the New York City skyline and the Statue of Liberty at sunset",
   },
   {
-    title: 'Lorem ipsum dolor sit amet',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    image: '/assets/images/hero/hero-main.png',
-    alt: 'Brazilian woman wrapped in the Brazil flag looking at the New York City skyline and the Statue of Liberty at sunset',
-    reverse: false,
+    title: "BRASSM",
+    text: "Brazilian woman wrapped in the Brazil flag looking at the New York City skyline and the Statue of Liberty at sunset - Brazilian woman wrapped in the Brazil flag looking at the New York City skyline and the Statue of Liberty at sunset",
+    image: "/assets/images/hero/cristo.jpg",
+    alt: "Brazilian woman wrapped in the Brazil flag looking at the New York City skyline and the Statue of Liberty at sunset",
   },
   {
-    title: 'Lorem ipsum dolor sit amet',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    image: '/assets/images/hero/hero-main.png',
-    alt: 'Brazilian woman wrapped in the Brazil flag looking at the New York City skyline and the Statue of Liberty at sunset',
-    reverse: true,
+    title: "BRASSM",
+    text: "Brazilian woman wrapped in the Brazil flag looking at the New York City skyline and the Statue of Liberty at sunset",
+    image: "/assets/images/hero/library.jpg",
+    alt: "Brazilian woman wrapped in the Brazil flag looking at the New York City skyline and the Statue of Liberty at sunset",
   },
 ];

@@ -20,17 +20,16 @@
 <section class="home-sections" aria-label="Highlights">
   <ul class="home-section-list" id="home-sections-list" role="list"></ul>
 
-  <!-- Molde de um bloco. O JS clona este template para cada item de js/data/home-sections.js -->
+  <!-- Cada bloco usa o mesmo visual do hero; edite os dados em js/data/home-sections.js. -->
   <template id="home-section-template">
-    <li class="home-section-item">
-      <div class="container home-section-grid">
-        <div class="home-section-media">
-          <img class="home-section-image" alt="" loading="lazy" decoding="async">
-        </div>
-        <div class="home-section-copy">
-          <h2 class="home-section-title"></h2>
-          <p class="home-section-text"></p>
-        </div>
+    <li class="home-hero">
+      <img class="home-hero-image" alt="" width="1254" height="1254" loading="lazy" decoding="async">
+      <div class="home-hero-overlay" aria-hidden="true"></div>
+      <div class="container home-hero-content">
+        <h2 class="home-hero-title">
+          <span class="home-hero-title-main"></span>
+          <span class="home-hero-title-sub"></span>
+        </h2>
       </div>
     </li>
   </template>

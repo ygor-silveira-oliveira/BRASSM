@@ -11,15 +11,15 @@ export function initHomeSections() {
   homeSections.forEach((section) => {
     const item = template.content.firstElementChild.cloneNode(true);
 
-    if (section.reverse) item.classList.add('home-section-item--reverse');
 
-    const image = item.querySelector('.home-section-image');
+
+    const image = item.querySelector('.home-hero-image');
     image.src = section.image;
     image.alt = section.alt || '';
     image.loading = 'lazy';
 
-    item.querySelector('.home-section-title').textContent = section.title;
-    item.querySelector('.home-section-text').textContent = section.text;
+    item.querySelector('.home-hero-title-main').textContent = section.title;
+    item.querySelector('.home-hero-title-sub').textContent = section.text;
 
     fragment.appendChild(item);
   });

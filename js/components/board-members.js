@@ -13,9 +13,11 @@ export function initBoardMembers() {
 
     const image = card.querySelector('.board-card__image');
     image.src = member.image;
-    image.alt = member.name || `Board member ${index + 1}`;
+    image.alt = member.name && member.name !== 'Name to be confirmed'
+      ? member.name
+      : `Temporary portrait for board profile ${index + 1}`;
 
-    for (const field of ['name', 'role', 'university']) {
+    for (const field of ['name', 'role', 'university', 'description']) {
       const element = card.querySelector(`.board-card__${field}`);
       if (member[field]) element.textContent = member[field];
       else element.remove(); // campo vazio não ocupa espaço
