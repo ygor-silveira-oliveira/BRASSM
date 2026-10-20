@@ -1,9 +1,9 @@
-<section class="home-hero" aria-labelledby="hero-title">
+<section class="home-hero home-hero--intro" aria-labelledby="hero-title">
   <img
-    src="/assets/images/hero/hero-main.png"
+    src="/assets/images/hero/hero-main-enhanced.png"
     alt="Brazilian woman wrapped in the Brazil flag looking at the New York City skyline and the Statue of Liberty at sunset"
-    width="1254"
-    height="1254"
+    width="1536"
+    height="1024"
     fetchpriority="high"
     decoding="async"
     class="home-hero-image"
@@ -11,13 +11,16 @@
   <div class="home-hero-overlay" aria-hidden="true"></div>
   <div class="container home-hero-content">
     <h1 id="hero-title" class="home-hero-title">
-      <span class="home-hero-title-main">BRASSM</span>
+      <span class="home-hero-title-main">
+        <span class="home-intro-accessible">BRASSM</span>
+        <span class="home-intro-letters" aria-hidden="true"><span>B</span><span>R</span><span>A</span><span>S</span><span>S</span><span>M</span></span>
+      </span>
       <span class="home-hero-title-sub">Brazilian Scholars for Sport Management</span>
     </h1>
   </div>
 </section>
 
-<section class="home-sections" aria-label="Highlights">
+<section class="home-sections" id="home-highlights" aria-label="Highlights">
   <ul class="home-section-list" id="home-sections-list" role="list"></ul>
 
   <!-- Cada bloco usa o mesmo visual do hero; edite os dados em js/data/home-sections.js. -->

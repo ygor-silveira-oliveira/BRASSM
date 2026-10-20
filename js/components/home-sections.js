@@ -8,7 +8,7 @@ export function initHomeSections() {
 
   const fragment = document.createDocumentFragment();
 
-  homeSections.forEach((section) => {
+  homeSections.forEach((section, index) => {
     const item = template.content.firstElementChild.cloneNode(true);
 
 
@@ -16,7 +16,8 @@ export function initHomeSections() {
     const image = item.querySelector('.home-hero-image');
     image.src = section.image;
     image.alt = section.alt || '';
-    image.loading = 'lazy';
+    image.loading = index === 0 ? 'eager' : 'lazy';
+    image.fetchPriority = index === 0 ? 'high' : 'auto';
 
     item.querySelector('.home-hero-title-main').textContent = section.title;
     item.querySelector('.home-hero-title-sub').textContent = section.text;
