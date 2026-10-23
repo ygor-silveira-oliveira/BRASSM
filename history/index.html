@@ -1,60 +1,111 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Our History – BRASSM</title>
-  <meta name="description" content="Every community begins with a question: what could we make possible together?">
-  <meta name="theme-color" content="#1e3a8a">
-  <meta name="color-scheme" content="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Our History – BRASSM</title>
+    <meta
+      name="description"
+      content="Every community begins with a question: what could we make possible together?"
+    />
+    <meta name="theme-color" content="#1e3a8a" />
+    <meta name="color-scheme" content="light" />
 
-  <link rel="icon" href="/assets/icons/favicon.ico" sizes="any">
-  <link rel="icon" href="/assets/icons/favicon.svg" type="image/svg+xml">
-  <link rel="icon" href="/assets/icons/favicon-96x96.png" sizes="96x96" type="image/png">
-  <link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
-  <link rel="manifest" href="/site.webmanifest">
+    <link rel="icon" href="/assets/icons/favicon.ico" sizes="any" />
+    <link rel="icon" href="/assets/icons/favicon.svg" type="image/svg+xml" />
+    <link
+      rel="icon"
+      href="/assets/icons/favicon-96x96.png"
+      sizes="96x96"
+      type="image/png"
+    />
+    <link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
 
-  <meta property="og:type" content="website">
-  <meta property="og:site_name" content="BRASSM">
-  <meta property="og:title" content="Our History – BRASSM">
-  <meta property="og:description" content="Every community begins with a question: what could we make possible together?">
-  <meta property="og:image" content="https://brassm.org/assets/images/hero/hero-main.jpg">
-  <meta name="twitter:card" content="summary_large_image">
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="BRASSM" />
+    <meta property="og:title" content="Our History – BRASSM" />
+    <meta
+      property="og:description"
+      content="Every community begins with a question: what could we make possible together?"
+    />
+    <meta
+      property="og:image"
+      content="https://brassm.org/assets/images/hero/hero-main.jpg"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
 
-  <link rel="stylesheet" href="/css/variables.css">
-  <link rel="stylesheet" href="/css/style.css">
-  <link rel="stylesheet" href="/css/components.css">
-  <link rel="stylesheet" href="/css/responsive.css">
-  <script type="module" src="/js/main.js"></script>
-</head>
-<body class="history-page">
-  <a class="skip-link" href="#main">Skip to main content</a>
-  <div class="include-header" data-include="/components/header.html"></div>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400&family=Source+Sans+3:wght@400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/variables.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/components.css" />
+    <link rel="stylesheet" href="/css/responsive.css" />
+    <script type="module" src="/js/main.js"></script>
+  </head>
+  <body class="history-page">
+    <a class="skip-link" href="#main">Skip to main content</a>
+    <div class="include-header" data-include="/components/header.html"></div>
 
-  <main id="main">
+    <main id="main">
       <section class="history-hero" aria-labelledby="history-title">
-        <!-- Foto provisoria: substituir pela imagem enviada pelo cliente. -->
-        <img class="history-hero__image" src="/assets/images/hero/conference.jpeg" alt="" fetchpriority="high" decoding="async">
-        <div class="history-hero__overlay" aria-hidden="true"></div>
-        <div class="container history-hero__content">
-          <p class="history-hero__eyebrow">BRASSM</p>
-          <h1 id="history-title">Our History</h1>
-          <!-- Substituir os textos abaixo pela historia oficial da organizacao. -->
-          <div class="history-hero__story">
-            <h2>How it all began</h2>
-            <p>[The story of how BRASSM was created, from the first conversations to the formation of the organization.]</p>
-            <h2>When and why we started</h2>
-            <p>[The founding date and the purpose that brought the community together.]</p>
+        <div class="container history-hero__grid">
+          <div class="history-hero__content">
+            <p class="history-hero__eyebrow">BRASSM / Our story</p>
+            <h1 id="history-title">Our History</h1>
+            <p class="history-hero__lead">Built through<br />connection.</p>
+            <p class="history-hero__intro">Every community begins with a question: what could we make possible together?</p>
+            <a class="history-hero__link" href="#our-story">Discover our story <span aria-hidden="true">?</span></a>
           </div>
-          <div class="history-hero__founders">
-            <h2>Founding members</h2>
-            <p>[Names of the founding members to be provided.]</p>
+          <figure class="history-hero__visual">
+            <img
+              class="history-hero__image"
+              data-history-carousel
+              src="/assets/images/carousel/ourHistory.jpeg"
+              alt="Two conference attendees standing together in front of a projected city skyline"
+              width="1200"
+              height="1600"
+              fetchpriority="high"
+              decoding="async"
+            />
+            <figcaption>People. Conversations. Connections.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="history-story" id="our-story" aria-labelledby="story-title">
+        <div class="container history-story__grid">
+          <div class="history-story__heading">
+            <p class="history-hero__eyebrow">The beginning</p>
+            <h2 id="story-title">The story<br />behind BRASSM.</h2>
+            <p class="history-story__note">Our official history is being prepared. This space will bring together our origins and the people who helped shape the association.</p>
+          </div>
+          <!-- Replace these editorial placeholders with the approved organizational history. -->
+          <div class="history-story__chapters">
+            <article class="history-chapter">
+              <span class="history-chapter__number" aria-hidden="true">01</span>
+              <div><h3>How it all began</h3><p>The first conversations and the journey toward the creation of BRASSM will be documented here.</p></div>
+            </article>
+            <article class="history-chapter">
+              <span class="history-chapter__number" aria-hidden="true">02</span>
+              <div><h3>When and why we started</h3><p>Our founding date, shared purpose, and early milestones will be added to this chapter.</p></div>
+            </article>
+            <article class="history-chapter">
+              <span class="history-chapter__number" aria-hidden="true">03</span>
+              <div><h3>Founding members</h3><p>This space will recognize the founding members and their contributions to the association.</p></div>
+            </article>
           </div>
         </div>
       </section>
-  </main>
+    </main>
 
-  <div data-include="/components/footer.html"></div>
-  <noscript><p style="padding:24px;text-align:center">JavaScript is required to load the navigation and page sections of this site.</p></noscript>
-</body>
+    <div data-include="/components/footer.html"></div>
+    <noscript
+      ><p style="padding: 24px; text-align: center">
+        JavaScript is required to load the navigation and page sections of this
+        site.
+      </p></noscript
+    >
+  </body>
 </html>

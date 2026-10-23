@@ -25,7 +25,9 @@ export function initHeader() {
     for (const item of items) {
       const isOpen = item.dataset.label === state.openSubmenu;
       item.classList.toggle(ITEM_OPEN, isOpen);
-      item.querySelector('[data-submenu-toggle]')?.setAttribute('aria-expanded', String(isOpen));
+      for (const toggle of item.querySelectorAll('[data-submenu-toggle]')) {
+        toggle.setAttribute('aria-expanded', String(isOpen));
+      }
     }
   }
 
@@ -41,11 +43,13 @@ export function initHeader() {
   });
 
   for (const item of items) {
-    item.querySelector('[data-submenu-toggle]')?.addEventListener('click', () => {
-      const label = item.dataset.label;
-      state.openSubmenu = state.openSubmenu === label ? null : label;
-      render();
-    });
+    for (const toggle of item.querySelectorAll('[data-submenu-toggle]')) {
+      toggle.addEventListener('click', () => {
+        const label = item.dataset.label;
+        state.openSubmenu = state.openSubmenu === label ? null : label;
+        render();
+      });
+    }
   }
 
   // Qualquer link do header (logo, itens, subitens) fecha o menu, como no original

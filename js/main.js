@@ -5,6 +5,8 @@ import { initFooter } from './components/footer.js';
 import { initBoardMembers } from './components/board-members.js';
 import { initHomeSections } from './components/home-sections.js';
 import { initHomeMotion } from './components/home-motion.js';
+import { initHistoryMotion } from './components/history-motion.js';
+import { initHistoryCarousel } from './components/history-carousel.js';
 
 async function init() {
   // 1. Injeta header, footer e seções (todos os fetch rodam em paralelo)
@@ -16,6 +18,8 @@ async function init() {
   initBoardMembers();
   initHomeSections();
   initHomeMotion();
+  initHistoryMotion();
+  initHistoryCarousel();
 
   // 3. Métricas (somente em produção)
   loadAnalytics();
