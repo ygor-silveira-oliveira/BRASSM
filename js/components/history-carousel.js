@@ -16,13 +16,42 @@ export function initHistoryCarousel() {
   });
 
   let current = 0;
-  window.setInterval(() => {
-    if (document.hidden) return;
+  let transitioning = false;
+  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+
+  window.setInterval(async () => {
+    if (document.hidden || transitioning) return;
     const next = (current + 1) % slides.length;
     const { photo, alt } = slides[next];
     if (!photo.complete || !photo.naturalWidth) return;
-    image.src = photo.src;
-    image.alt = alt;
-    current = next;
+    transitioning = true;
+    let exit;
+    let entrance;
+    try {
+      if (!reducedMotion.matches && image.animate) {
+        exit = image.animate([
+          { opacity: 1, filter: 'blur(0px)', scale: '1' },
+          { opacity: 0, filter: 'blur(4px)', scale: '0.985' },
+        ], { duration: 220, easing: 'ease-in', fill: 'forwards' });
+        await exit.finished;
+      }
+
+      image.src = photo.src;
+      image.alt = alt;
+      current = next;
+
+      if (exit) {
+        entrance = image.animate([
+          { opacity: 0, filter: 'blur(4px)', scale: '1.025' },
+          { opacity: 1, filter: 'blur(0px)', scale: '1' },
+        ], { duration: 650, easing: 'cubic-bezier(0.22, 1, 0.36, 1)' });
+        exit.cancel();
+        await entrance.finished;
+      }
+    } finally {
+      exit?.cancel();
+      entrance?.cancel();
+      transitioning = false;
+    }
   }, 3000);
 }
