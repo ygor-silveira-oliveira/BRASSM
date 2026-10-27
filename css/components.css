@@ -696,6 +696,12 @@
   filter: brightness(0.8);
   z-index: 0;
 }
+/* Keep the intro image at its natural cover scale to preserve detail. */
+.home-page main > .home-hero .home-hero-image {
+  transform: none;
+  animation: none;
+}
+
 .home-hero-overlay {
   position: absolute;
   inset: 0;
